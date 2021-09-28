@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class calculator {
+
+	public static void main(String[] args) {
+		int num1,num2,a;
+		Scanner ob=new Scanner(System.in);
+		System.out.println("Enter the first number: ");
+		num1=ob.nextInt();
+		System.out.println("Enter the second number: ");
+		num2=ob.nextInt();
+		int i=0;
+		while(i<=5)
+		{
+		System.out.println("-----OPERATIONS-----");
+		System.out.println("Enter 1. for addition(+)");
+		System.out.println("Enter 2. for substraction(-)");
+		System.out.println("Enter 3. for multiplication(*)");
+		System.out.println("Enter 4. for division(/)");
+		System.out.println("Enter 5. for modulus(%)");
+		System.out.print("Enter your choice: ");
+		int choice=ob.nextInt();
+		switch(choice)
+		{ 
+		case 1:a=num1+num2;
+		{
+		         System.out.println("The answer is: "+a);
+		         break;
+		}
+		case 2:a=num1-num2;
+		{
+		         System.out.println("The answer is: "+a);
+		         break;
+		}
+		case 3:a=num1*num2;
+		{
+		  		 System.out.println("The answer is: "+a);
+		  		 break;
+		}
+		case 4:a=num1/num2;
+		{
+		  		 System.out.println("The answer is: "+a);
+		  		 break;
+		}
+		case 5:a=num1%num2;
+		{
+		  		 System.out.println("The answer is: "+a);
+		  		 break;
+		}
+		default :
+		{
+			System.out.println("Invalid opertion");
+		}
+		}
+		}
+		i++;
+	}
+}
+		
+		
